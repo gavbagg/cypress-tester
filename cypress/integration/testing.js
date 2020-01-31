@@ -1,6 +1,6 @@
 describe('Testy test', function() {
-  it('Check the BBC is alive', function() {
-    cy.visit('https://www.bbc.co.uk/')
-    cy.contains('Welcome to the BBC')
+  it(`Check '${Cypress.config().baseUrl}' contains '${Cypress.env('expected_content')}'`, function() {
+    cy.visit('/') // Uses baseUrl set via env variable or in cypress.json
+    cy.contains(Cypress.env('expected_content'))
   })
 })
