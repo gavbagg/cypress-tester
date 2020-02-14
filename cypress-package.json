@@ -4,12 +4,15 @@
   "scripts": {
     "cypress:run": "cypress run",
     "cypress:run:tags": "cypress-tags run -e TAGS=$CYPRESS_TAGS",
+    "postcypress:run": "node ./cypress-generate-report.js",
+    "postcypress:run:tags": "node ./cypress-generate-report.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress-cucumber-preprocessor": "^2.0.1"
+    "cypress-cucumber-preprocessor": "^2.0.1",
+    "multiple-cucumber-html-reporter": "^1.14.0"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true

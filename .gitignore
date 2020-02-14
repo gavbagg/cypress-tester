@@ -3,3 +3,11 @@ node_modules
 
 # cypress
 cypress/videos
+cypress/cucumber-json
+cypress/report
+
+# docker
+docker-report
+
+# misc
+*.DS_Store
