@@ -1,6 +1,7 @@
 {
   "video": false,
   "chromeWebSecurity": false,
+  "testFiles": "**/*.feature",
   "baseUrl": "https://www.micks-bits.co.uk",
   "env": {
     "expected_content": "Welcome to Micks Bits"
